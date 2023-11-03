@@ -14,7 +14,6 @@ class AntiVirus:
         md5 =hashlib.md5()
         md5.update(read)
         hash =(md5.hexdigest())
-        print(hash)
         Malware =open("Hahses.txt","r")
         read =Malware.readlines()
         for i in read:
