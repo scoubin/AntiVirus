@@ -1,5 +1,5 @@
 import hashlib
-
+import os
 class AntiVirus:
 
     
@@ -19,7 +19,7 @@ class AntiVirus:
         read =Malware.readlines()
         for i in read:
             if i ==hash:
-                print("Un virus")
+                os.remove(file)
             else:
                  print("Il y'a pas de détéction ")
                  break
